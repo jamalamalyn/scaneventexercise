@@ -5,6 +5,11 @@
       "taskLabel": "task-FreightWaysScanEventExercise",
       "appliesTo": "FreightWaysScanEventExercise/",
       "type": "launch"
+    },
+    {
+      "taskLabel": "task-FreightWaysScanEventExercise",
+      "appliesTo": "FreightWaysScanEventExercise/",
+      "type": "launch"
     }
   ]
 }
