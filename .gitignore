@@ -1,3 +1,7 @@
 FWScanEventTrackerService/bin/
 FWScanEventTrackerService/obj/
+FWFISModels/bin/
+FWFISModels/obj/
+ScanEventAPI/bin/
+ScanEventAPI/obj/
 .vs/
