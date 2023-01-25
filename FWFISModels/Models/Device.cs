@@ -2,7 +2,6 @@
 
 namespace FWScan.Models
 {
-    [Produces("application/json")]
     public class Device
     {
         public long DeviceId { get; set; }
