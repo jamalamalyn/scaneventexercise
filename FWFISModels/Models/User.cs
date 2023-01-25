@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace FWScan.Models
+﻿namespace FWScan.Models
 {
     public class User
     {

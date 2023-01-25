@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace FWScan.Models
 {
@@ -15,6 +14,7 @@ namespace FWScan.Models
 
     public class ScanEvent
     {
+        [Key]
         public long EventId { get; set; }
 
         public long ParcelId { get; set; }
