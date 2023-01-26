@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FWScan.EventAPI", "FWScan.EventAPI\FWScan.EventAPI.csproj", "{529B47B3-B4CC-43E4-BDA2-2F6E4AAB0F97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FWScan.EventTrackerService", "FWScan.EventTrackerService\FWScan.EventTrackerService.csproj", "{D67DF7DC-21AA-44E7-8D31-BB7BBBFF6785}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{529B47B3-B4CC-43E4-BDA2-2F6E4AAB0F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529B47B3-B4CC-43E4-BDA2-2F6E4AAB0F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529B47B3-B4CC-43E4-BDA2-2F6E4AAB0F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529B47B3-B4CC-43E4-BDA2-2F6E4AAB0F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D67DF7DC-21AA-44E7-8D31-BB7BBBFF6785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67DF7DC-21AA-44E7-8D31-BB7BBBFF6785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67DF7DC-21AA-44E7-8D31-BB7BBBFF6785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67DF7DC-21AA-44E7-8D31-BB7BBBFF6785}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {805BD3B2-B86F-4686-A249-4261F38B2318}
+	EndGlobalSection
+EndGlobal

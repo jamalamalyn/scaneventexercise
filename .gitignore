@@ -1,3 +1,5 @@
-bin/
-obj/
+FWScan.EventTrackerService/bin/
+FWScan.EventTrackerService/obj/
+FWScan.EventAPI/bin/
+FWScan.EventAPI/obj/
 .vs/
