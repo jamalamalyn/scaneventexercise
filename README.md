@@ -51,8 +51,32 @@ ParcelId, Type, CreatedDateTimeUtc, StatusCode, RunId are required.
 - Type : PICKUP, STATUS, DELIVERY
 - CarrierId : NC, PH, CP, NW
 
+---
+
+## Steps to run
+
+## Scan Event API detail
+1. For the purposes of development, you can assume a Scan Event API exists that has a single endpoint
+available e.g. GET http://localhost/v1/scans/scanevents
+2. The scan event API endpoint above supports the following URL parameters;
+  a. FromEventId – return scan events with an EventId greater than or equal to this (defaults to 1).
+  b. Limit – the total number of scan events to return (defaults to 100). e.g. http://localhost/v1/scans/scanevents?FromEventId=83269&Limit=100
+3. Sample Scan Event JSON;
+
 ----
-## Assumptions, Exclusions & Dependencies
+
+## Assumptions & Exclusions
+- I assume that the API endpoint the Worker Service is consuming from is stored in a raw state perhaps from a message queue
+- I assume that the frequency that the Worker Service consumes the API should be as often as possible. Package delivery data is mission critical, and its important information to be consumed, prepared in a persistent state relationally - ready for specific details to be retrieved for normal business operations. (e.g. customer alerts for package delivery for example)
+- The worker service is a background service, and as such there are no end-users apart from Developers who need to do diagnostics/debugging - hence the need for robust logging.
+- I assume that there is no need for delete and update functionality
+- I assume that new Event types can be 
 
 ---
+
+## Exclusions
+- The purpose of this application is for data storage in a way that is easy to be fetched later. Presenting the data is out of scope.
+---
+
 ## Future improvements & extensions
+- As it uses a local SqLite database implementation for data storage, moving the data off into a cloud based data storage would be far better - considering the possible large volumes of data that can be stored.
