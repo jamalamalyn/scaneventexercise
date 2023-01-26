@@ -53,8 +53,6 @@ ParcelId, Type, CreatedDateTimeUtc, StatusCode, RunId are required.
 
 ---
 
-## Steps to run
-
 ## Scan Event API detail
 1. For the purposes of development, you can assume a Scan Event API exists that has a single endpoint
 available e.g. GET http://localhost/v1/scans/scanevents
@@ -62,6 +60,17 @@ available e.g. GET http://localhost/v1/scans/scanevents
   a. FromEventId – return scan events with an EventId greater than or equal to this (defaults to 1).
   b. Limit – the total number of scan events to return (defaults to 100). e.g. http://localhost/v1/scans/scanevents?FromEventId=83269&Limit=100
 3. Sample Scan Event JSON;
+
+---
+
+---
+
+## Steps to run
+1. Open up project in Visual Studio / Open folder in Visual Studio Code, its writting in .NET 6 so make sure you have the SDK's intalled.
+2. Restore nuget packages, visual studio code usually prompts to restore but you can do so from the terminal. 
+3. There are 2 projects. FWScan.EventAPI is a dummy API and was just used for testing purpsoses. The main project for the Exercise is `FWScan.EventTrackerService`.
+4. I've added the web api url configuration in the `FWScan.EventTrackerService/appsettings.json`, under "WebAPIs" > "EventScanAPI". It is already configured to run with the dummy API that I wrote, so change it to point to an endpoint you may have, or remove it to check how the services handles it going down.
+5. Once its building, you should be able to run it. You can run straight from VS22, or in VS Code from the terminal the commands are `dotnet build` and `dotnet run`
 
 ----
 
