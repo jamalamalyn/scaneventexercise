@@ -1,5 +1,0 @@
-C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\FWScanEventTrackerService\obj\Debug\net6.0\FW.Scan.EventTrackerService.csproj.AssemblyReference.cache
-C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\FWScanEventTrackerService\obj\Debug\net6.0\FW.Scan.EventTrackerService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\FWScanEventTrackerService\obj\Debug\net6.0\FW.Scan.EventTrackerService.AssemblyInfoInputs.cache
-C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\FWScanEventTrackerService\obj\Debug\net6.0\FW.Scan.EventTrackerService.AssemblyInfo.cs
-C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\FWScanEventTrackerService\obj\Debug\net6.0\FW.Scan.EventTrackerService.csproj.CoreCompileInputs.cache
