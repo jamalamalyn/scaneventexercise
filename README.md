@@ -70,7 +70,7 @@ available e.g. GET http://localhost/v1/scans/scanevents
 - I assume that the frequency that the Worker Service consumes the API should be as often as possible. Package delivery data is mission critical, and its important information to be consumed, prepared in a persistent state relationally - ready for specific details to be retrieved for normal business operations. (e.g. customer alerts for package delivery for example)
 - The worker service is a background service, and as such there are no end-users apart from Developers who need to do diagnostics/debugging - hence the need for robust logging.
 - I assume that there is no need for delete and update functionality
-- I assume that new Event types can be 
+- I assume that new Event Types can be entered into the data base.
 
 ---
 
@@ -79,4 +79,9 @@ available e.g. GET http://localhost/v1/scans/scanevents
 ---
 
 ## Future improvements & extensions
-- As it uses a local SqLite database implementation for data storage, moving the data off into a cloud based data storage would be far better - considering the possible large volumes of data that can be stored.
+- As it uses a local SqLite database implementation for data storage, moving the data off into a cloud based data storage would be much more sufficient - specifically for the purpose of being able to be retrieved later. 
+- Entity Framework while easy to implement code wise - is quite a slow ORM, and perhaps not suitable for the large amount of data that could potentially be stored. Its fit for retrieving 100 items at a time, but once the database size gets too large - simply retrieving of the last item event id will become quite slow. I would opt for use of Dapper with a relational DB like mySql or SqlServer for example. In saying this based on the simplicity of the data model - a Nosql implementation with Azure Cosmos or MongoDB would also work
+- Other worker applications that would use the data this one stores - could be involved in data transformation, or being able to store it in a way that it can be readily used that suits a specific businesses needs - for example - storing all NZCourier data in a specific way that allows them to carry out their operational needs.
+- Architecturally speaking this item sits within a Web-queue-worker architecture. It could consume from a queue or a cache & stores in a database - down below is a diagram of what that could possibly look like:
+
+![Blank diagram (1)](https://user-images.githubusercontent.com/18294830/214822423-e4abcf81-363f-472e-8c37-ff0b4c3f93f4.png)
