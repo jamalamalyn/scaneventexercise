@@ -1,0 +1,6 @@
+C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\ScanEventAPI\obj\Debug\net6.0\FW.Scan.EventAPI.csproj.AssemblyReference.cache
+C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\ScanEventAPI\obj\Debug\net6.0\FW.Scan.EventAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\ScanEventAPI\obj\Debug\net6.0\FW.Scan.EventAPI.AssemblyInfoInputs.cache
+C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\ScanEventAPI\obj\Debug\net6.0\FW.Scan.EventAPI.AssemblyInfo.cs
+C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\ScanEventAPI\obj\Debug\net6.0\FW.Scan.EventAPI.csproj.CoreCompileInputs.cache
+C:\Users\brejamlyn\source\repos\jamalamalyn\scaneventexercise\ScanEventAPI\obj\Debug\net6.0\FW.Scan.EventAPI.MvcApplicationPartsAssemblyInfo.cache
